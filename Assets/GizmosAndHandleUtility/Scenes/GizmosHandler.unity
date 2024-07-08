@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c2b3ffc921207441bce06dbe9f861a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _color: {r: 0, g: 0.6942835, b: 1, a: 1}
   _radius: 0.5
 --- !u!1 &296791444
 GameObject:
@@ -314,6 +315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeebae39d3715141b720fdb3bfde080, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _color: {r: 1, g: 0.7405456, b: 0, a: 1}
   _distance: 5
 --- !u!1 &705507993
 GameObject:

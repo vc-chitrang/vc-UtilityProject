@@ -1,7 +1,7 @@
 using UnityEngine;
 
 namespace ViitorCloud {
-    public class GizmoSphere : MonoBehaviour {      
+    public class GizmoSphere : GizmoBase {      
         [SerializeField] [Range(0, 1)] private float _radius = 0.5f;
 
         private void OnDrawGizmosSelected() {
@@ -10,7 +10,7 @@ namespace ViitorCloud {
 
         private void OnDrawGizmos() {
             // Draw a yellow sphere at the transform's position
-            Gizmos.color = Color.yellow;
+            Gizmos.color = _color;
             Gizmos.DrawSphere(transform.position, _radius);
         }       
     }
