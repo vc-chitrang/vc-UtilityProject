@@ -1,17 +1,21 @@
 using UnityEngine;
 
 namespace ViitorCloud {
-    public class GizmoSphere : GizmoBase {      
-        [SerializeField] [Range(0, 1)] private float _radius = 0.5f;
+    public class GizmoSphere : GizmoBase {
+        [SerializeField][Range(0, 1)] private float _radius = 0.5f;
+        [SerializeField] private bool _wireSpere = false;
 
         private void OnDrawGizmosSelected() {
 
         }
 
         private void OnDrawGizmos() {
-            // Draw a yellow sphere at the transform's position
             Gizmos.color = _color;
-            Gizmos.DrawSphere(transform.position, _radius);
-        }       
+            if (_wireSpere) {
+                Gizmos.DrawWireSphere(transform.position, _radius);
+            } else {
+                Gizmos.DrawSphere(transform.position, _radius);
+            }
+        }
     }
 }
